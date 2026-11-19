@@ -1,0 +1,215 @@
+[
+  {
+    "id": "q01",
+    "type": "single",
+    "question": "What's the minimum order in Zone 1 so I don't pay for delivery?",
+    "expected_answer": "$99 or more gets free standard shipping. The threshold uses the subtotal after promo codes and Trail Points, before tax.",
+    "key_facts": ["$99"],
+    "sources": ["shipping-costs.md"]
+  },
+  {
+    "id": "q02",
+    "type": "single",
+    "question": "How long is the warranty on Cedar Ridge-brand products?",
+    "expected_answer": "2 years from the purchase date against manufacturing defects. Cedar Ridge items bought from Last Chance get 1 year.",
+    "key_facts": ["2 years"],
+    "sources": ["warranty.md"]
+  },
+  {
+    "id": "q03",
+    "type": "single",
+    "question": "Is there a use-by date on gift cards?",
+    "expected_answer": "No. Gift cards never expire and have no fees. Promotional Bonus Cards are different and expire 60 days after they're issued.",
+    "key_facts": ["Gift cards never expire"],
+    "sources": ["gift-cards.md"]
+  },
+  {
+    "id": "q04",
+    "type": "single",
+    "question": "Can I stack two discount codes on one order?",
+    "expected_answer": "No. Only one promo code per order. A promo code can be combined with Trail Points and gift cards.",
+    "key_facts": ["No, only one promo code per order"],
+    "sources": ["promo-codes.md"]
+  },
+  {
+    "id": "q05",
+    "type": "single",
+    "question": "I just placed an order and changed my mind. How long do I have to call it off myself?",
+    "expected_answer": "1 hour from placing it, from Account > Orders > Cancel, while the status is still \"Received\". After that, contact support.",
+    "key_facts": ["1 hour"],
+    "sources": ["order-cancellations.md"]
+  },
+  {
+    "id": "q06",
+    "type": "single",
+    "question": "When does the money come out of my account for an item I reserve before it's released?",
+    "expected_answer": "Preorders are charged in full when you place the order (unlike backorders, which are charged when they ship).",
+    "key_facts": ["Charged in full when the order is placed"],
+    "sources": ["preorders.md"]
+  },
+  {
+    "id": "q07",
+    "type": "single",
+    "question": "Will I have to pay duties when my order is delivered to the United States?",
+    "expected_answer": "No. For US orders, duties and taxes are collected at checkout, so nothing is due on delivery.",
+    "key_facts": ["Nothing is due on delivery", "Duties and taxes are collected at checkout"],
+    "sources": ["international-orders.md"]
+  },
+  {
+    "id": "q08",
+    "type": "single",
+    "question": "Tracking says my parcel arrived but it's not on my porch. What should I do?",
+    "expected_answer": "Wait 2 business days, check with neighbours, building management and safe spots, then contact Cedar Ridge within 14 days of the delivery scan. They file a claim with the carrier.",
+    "key_facts": ["Wait 2 business days", "Contact Cedar Ridge within 14 days of the delivery scan"],
+    "sources": ["lost-packages.md"]
+  },
+  {
+    "id": "q09",
+    "type": "single",
+    "question": "My stove showed up broken. How long do I have to tell you?",
+    "expected_answer": "7 days from delivery, at Account > Orders > Report a problem, with photos of the item, the outside of the box and the shipping label.",
+    "key_facts": ["7 days from delivery"],
+    "sources": ["damaged-items.md"]
+  },
+  {
+    "id": "q10",
+    "type": "single",
+    "question": "I preordered a stove on November 10, 2026 and it arrived December 12, 2026. What's the last day I can send it back?",
+    "expected_answer": "January 11, 2027 (30 days from delivery). The holiday window doesn't apply, because the order date decides eligibility and November 10 is before November 15.",
+    "key_facts": ["January 11, 2027", "The holiday window doesn't apply because it was ordered before November 15"],
+    "sources": ["holiday-returns.md"]
+  },
+  {
+    "id": "q11",
+    "type": "single",
+    "question": "The jacket I ordered was backordered at $150. By the time it ships, it's on sale for $120. Which price do I pay?",
+    "expected_answer": "$120. You pay the lower of the price when you ordered and the price on the day it ships.",
+    "key_facts": ["$120", "You pay the lower of the order price and the ship-date price"],
+    "sources": ["backorders.md"]
+  },
+  {
+    "id": "q12",
+    "type": "single",
+    "question": "I bought a tent on November 20, 2026 and it went on sale for Black Friday on November 28. Can I get the difference back?",
+    "expected_answer": "No. Black Friday Week (November 27 – December 1, 2026) sale prices don't qualify for price adjustments, even within 14 days of the order.",
+    "key_facts": ["No", "Black Friday Week sale prices don't qualify for price adjustments"],
+    "sources": ["price-adjustments.md"]
+  },
+  {
+    "id": "q13",
+    "type": "multi",
+    "question": "I live in Yukon. Can I get a kayak delivered to my home?",
+    "expected_answer": "No. Yukon is Zone 4, and oversized items only ship by freight to Zones 1–3. You can pick it up for free at the Calgary, Canmore or Kamloops store.",
+    "key_facts": ["No", "Oversized items only ship to Zones 1–3, and Yukon is Zone 4"],
+    "sources": ["shipping-zones.md", "oversized-items.md"]
+  },
+  {
+    "id": "q14",
+    "type": "multi",
+    "question": "I live in Quebec. What's the latest date I can order with express shipping to get my order by December 24, 2026?",
+    "expected_answer": "December 18. Quebec is Zone 2. This is a best-effort date, not a guarantee.",
+    "key_facts": ["December 18"],
+    "sources": ["shipping-zones.md", "delivery-times.md"],
+    "notes": "Hardest question: needs the province-to-zone lookup plus the holiday deadline table, and the date is best-effort. Expect it to fail; that isn't a bug."
+  },
+  {
+    "id": "q15",
+    "type": "multi",
+    "question": "I bought a tent at full price on August 28, 2026 and it was delivered September 2. On October 1 it moved to the Last Chance section. Can I still return it on October 25?",
+    "expected_answer": "Yes, until November 1, 2026. The order was placed before September 1, 2026, so the old 60-day window applies. Final sale status is set at purchase, so moving to Last Chance later doesn't make it final sale.",
+    "key_facts": [
+      "Yes",
+      "The 60-day window applies because it was ordered before September 1, 2026",
+      "It isn't final sale because its status at purchase counts"
+    ],
+    "sources": ["returns.md", "final-sale-items.md"],
+    "notes": "Under the new 30-day window the deadline would be October 2, so a model that ignores the September 1 update answers no."
+  },
+  {
+    "id": "q16",
+    "type": "multi",
+    "question": "I ordered $70 boots and $40 socks to Zone 2 and got free shipping. If I mail back the socks, how much will I get back?",
+    "expected_answer": "$21.10 plus the tax paid on the socks: $40 minus the $8.95 return label fee minus $9.95 Zone 2 standard shipping (the kept $70 is under $99).",
+    "key_facts": ["$21.10"],
+    "sources": ["refunds.md", "shipping-costs.md"]
+  },
+  {
+    "id": "q17",
+    "type": "multi",
+    "question": "Can I exchange a jacket I bought in the Last Chance section for a different size?",
+    "expected_answer": "No. Last Chance items are final sale, and final sale items can't be exchanged, not even for a different size.",
+    "key_facts": ["No", "Last Chance items are final sale"],
+    "sources": ["final-sale-items.md", "exchanges.md"]
+  },
+  {
+    "id": "q18",
+    "type": "multi",
+    "question": "My Zone 1 order subtotal is $110 and I redeem 400 Trail Points. Do I still get free standard shipping?",
+    "expected_answer": "No. 400 points = $20 off, so the subtotal drops to $90, below the $99 threshold. Standard shipping is $7.95.",
+    "key_facts": ["No", "The subtotal drops to $90, below the $99 threshold"],
+    "sources": ["loyalty-points.md", "shipping-costs.md"]
+  },
+  {
+    "id": "q19",
+    "type": "unanswerable",
+    "question": "My preorder's release date keeps getting pushed back. After how long do you cancel it automatically?",
+    "expected_answer": "I don't know. The policies don't say preorders are ever cancelled automatically. They only say you get an email when the date slips and can cancel any time before it ships for a full refund.",
+    "key_facts": ["Says the policies don't state an automatic cancellation period for preorders"],
+    "must_not_say": ["The backorder rule (30 days late, then cancelled if no reply in 7 days)"],
+    "sources": [],
+    "notes": "Near miss: backorders.md has an auto-cancel rule that doesn't apply to preorders."
+  },
+  {
+    "id": "q20",
+    "type": "unanswerable",
+    "question": "My tracking hasn't updated in 8 business days. How long will the carrier trace take?",
+    "expected_answer": "I don't know. The policies say to contact Cedar Ridge after 7 business days (domestic) so they can open a trace, but don't say how long a trace takes.",
+    "key_facts": ["Says the policies don't state how long a trace takes"],
+    "must_not_say": ["10 business days (that's the claim time for packages marked delivered but not received)"],
+    "sources": [],
+    "notes": "Near miss: lost-packages.md gives a 10-business-day resolution time for a different situation."
+  },
+  {
+    "id": "q21",
+    "type": "unanswerable",
+    "question": "How long does the Canmore repair shop take to fix a jacket that's out of warranty?",
+    "expected_answer": "I don't know. The policies only say there's a $15 assessment fee, credited toward the repair. They don't give a turnaround time.",
+    "key_facts": ["Says the policies don't state a repair turnaround time"],
+    "must_not_say": ["10 business days (that's the warranty claim assessment time)"],
+    "sources": [],
+    "notes": "Near miss: warranty.md mentions the repair shop and a 10-business-day warranty assessment."
+  },
+  {
+    "id": "q22",
+    "type": "unanswerable",
+    "question": "What's the customer support phone number?",
+    "expected_answer": "I don't know. The policies don't give a phone number.",
+    "key_facts": ["Says the policies don't give a phone number"],
+    "sources": [],
+    "notes": "Off-topic control. Confirmed by grep: no phone number or hours in any policy, including the ones that say \"contact support\"."
+  },
+  {
+    "id": "q23",
+    "type": "reworded",
+    "question": "If I send back a pair of boots I don't like, how long until I see the money on my card?",
+    "expected_answer": "Within 5 business days after the boots arrive at the warehouse and pass inspection. Your bank may take another 3–10 business days to show it.",
+    "key_facts": ["Within 5 business days after the return arrives and passes inspection"],
+    "sources": ["refunds.md"]
+  },
+  {
+    "id": "q24",
+    "type": "reworded",
+    "question": "Can I swap my hiking boots for a half size bigger?",
+    "expected_answer": "Yes. You can exchange for the same product in a different size within the return window. It's free within Canada; you pay or get back any price difference.",
+    "key_facts": ["Yes", "Same product in a different size, within the return window"],
+    "sources": ["exchanges.md"]
+  },
+  {
+    "id": "q25",
+    "type": "reworded",
+    "question": "I opened a GPS unit and want to ship it back to you. Will I be charged anything?",
+    "expected_answer": "Yes. A 15% restocking fee for opened electronics, plus the $8.95 label fee for mailed returns in Canada (waived for Summit members or in-store returns).",
+    "key_facts": ["15% restocking fee", "$8.95 return label fee"],
+    "sources": ["returns.md"]
+  }
+]
